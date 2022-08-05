@@ -41,7 +41,7 @@ class App extends Component {
             console.error(error);
         }
     };
-    
+    // Function to listen
     listenToPaymentEvent = () => {
         let self = this;
         this.itemManager.events.SupplyChainStep().on("data", async function(evt){
